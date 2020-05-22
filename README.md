@@ -28,7 +28,7 @@ I built my own page in a .html text file and opened it in our browser to check i
   - Create a .css file where all our styling code will reside
 
 ## Author
- :bust_in_silhouette: **Author 2**
+ :bust_in_silhouette:
  * Github: https://github.com/Godswilly
  * LinkedIn: https://www.linkedin.com/in/kalu-agu-kalu/
  * Twitter: https://twitter.com/KaluAguKalu17
