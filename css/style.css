@@ -126,6 +126,7 @@ a {
   padding-right: 10px;
   text-decoration: none;
 }
+
 .end-footer p a {
   text-decoration: none;
 }
@@ -143,6 +144,7 @@ a {
   max-width: 100%;
   justify-content: flex-start;
 }
+
 .end-content div {
   max-width: 24.2%;
 }
@@ -170,10 +172,12 @@ footer {
 .foot-note p span {
   color: blue;
 }
+
 .footer-links {
   font-size: 10px;
   padding-left: 10px;
 }
+
 .end-footer {
   display: flex;
   flex-flow: row;
