@@ -1,10 +1,3 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: auto;
-}
-
 html {
   box-sizing: border-box;
   font-size: 50%;
@@ -12,23 +5,23 @@ html {
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  position: relative;
 }
 
 .container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   overflow: hidden;
+  width: 100%;
 }
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #0088cc;
 }
 
 .page {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   background-image: url("../assets/main-background.jpg");
   height: 550px;
   background-repeat: no-repeat;
@@ -36,14 +29,13 @@ a {
 }
 
 .nav-bar {
-  background-color: #707070;
   height: 35px;
   border-radius: 3px;
-  margin-top: 40px;
-  max-width: 960px;
+  margin-top: 90px;
+  width: 960px;
   display: flex;
   box-shadow: (0, 0, 0, 0.3) 0 1px 2px;
-  flex-flow: row;
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
@@ -56,34 +48,32 @@ a {
 .nav-lists {
   display: flex;
   align-items: center;
-  min-width: 103px;
+  width: 110px;
   justify-content: center;
   border-right: 1px solid grey;
   font-size: 14px;
 }
 
 .nav-search {
-  border: 2px solid transparent;
+  padding: 2px;
   padding-left: 1.5em;
-  max-width: 100px;
+  width: 80px;
+  border: 1px solid grey;
   border-radius: 15px;
   background: linear-gradient(to top, rgb(124, 128, 133) 30%, rgb(97, 80, 80) 87%);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAOCAQAAABedl5ZAAAAzklEQVQYlWNgAIP%2F9v%2FrwVCfARn85%2F%2B%2F%2Fz8CzEeS%2BnMQJPL0%2Ba37796DJfsZ4EYBwar9DBkMCQwFR86DJeXBUo%2F6QToYHCAKtaO%2Bf%2F%2F%2F%2F3kmmHNm%2Fv%2F%2FD27CTee4c%2Ff%2F%2F2vT4VKfXiM5CQg2t4M5lckQd%2F3nB0n8vQji5HhCFEpArP73AeGF35dACkEgYPtxmODXnxueg2igbqikh3l%2F1%2FpV%2B7vWyzUwxHatB%2BvcBLNfgMEA6AEDBg4g26Br%2FffvqeUMWIEBULcEdikGkG4AzGOfgUQC7TUAAAAASUVORK5CYII%3D);
+  background-repeat: no-repeat;
+  background-position: 2px 5px;
 }
 
-.search-img img {
-  max-height: 15px;
-  position: absolute;
-  padding-right: 100px;
+.search-img {
+  padding: 0 25px;
+  width: 100px;
 }
 
 .apple_logo img {
   width: 15px;
   height: 15px;
-}
-
-.nav-search:focus {
-  width: 120px;
-  background-color: white;
 }
 
 .nav-lists:hover {
@@ -95,13 +85,9 @@ a {
   color: honeydew;
 }
 
-.search-image {
-  height: 15px;
-}
-
 .mid-content {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   margin-top: 30px;
   align-items: center;
   color: ivory;
@@ -111,20 +97,19 @@ a {
 .mid-content h1 {
   padding-top: 10px;
   font-size: 48px;
-  text-transform: none;
 }
 
 .mid-content h3 {
   padding-top: 10px;
-  font-size: 34px;
-  max-width: 1000px;
+  font-size: 25px;
+  width: 100%;
   text-align: center;
   margin-top: 25px;
 }
 
 .play {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   padding-top: 20px;
   margin-top: 33px;
 }
@@ -143,11 +128,9 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: minmax(150px, 200px);
-  position: relative;
 }
 
 footer {
-  margin: auto;
   margin: 20px 170px 0 170px;
   font-size: 12px;
 }
