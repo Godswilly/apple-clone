@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   font-size: 50%;
 }
+
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
@@ -17,7 +18,7 @@ body {
 .container {
   display: flex;
   flex-flow: column;
-  overflow: hidden
+  overflow: hidden;
 }
 
 a {
