@@ -1,23 +1,35 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: auto;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 50%;
+}
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
 }
 
 .container {
   display: flex;
   flex-flow: column;
-  max-width: 100%;
+  overflow: hidden
 }
 
 a {
   text-decoration: none;
+  color: blue;
 }
 
 .page {
   display: flex;
   flex-flow: column;
-  background-image: url("../assets/main_background.jpg");
+  background-image: url("../assets/main-background.jpg");
   height: 550px;
-  width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -46,6 +58,7 @@ a {
   min-width: 103px;
   justify-content: center;
   border-right: 1px solid grey;
+  font-size: 14px;
 }
 
 .nav-search {
@@ -120,68 +133,32 @@ a {
   color: ivory;
 }
 
-.footer-links a {
-  border-right: 0.5px solid grey;
-  padding-left: 5px;
-  padding-right: 10px;
-  text-decoration: none;
-}
-
-.end-footer p a {
-  text-decoration: none;
-}
-
 .mid-content a:hover {
   text-decoration: underline;
 }
 
 .end-content {
-  display: flex;
-  flex-flow: row;
-  height: 200px;
-  flex-wrap: nowrap;
-  border: 2px solid white;
-  max-width: 100%;
-  justify-content: flex-start;
-}
-
-.end-content div {
-  max-width: 24.2%;
-}
-
-.footer-links a img {
-  padding-top: 10px;
+  margin-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: minmax(150px, 200px);
+  position: relative;
 }
 
 footer {
+  margin: auto;
+  margin: 20px 170px 0 170px;
+  font-size: 12px;
+}
+
+.address-nav {
   display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  margin-top: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.foot-note {
-  margin-top: 20px;
-  padding-left: 20px;
-}
-
-.foot-note p {
-  font-size: 10px;
-}
-
-.foot-note p span {
-  color: blue;
-}
-
-.footer-links {
-  font-size: 10px;
-  padding-left: 10px;
-}
-
-.end-footer {
-  display: flex;
-  flex-flow: row;
-  font-size: 10px;
-  margin-top: 10px;
-  margin-left: 95px;
+.copyright,
+.address-nav {
+  padding-bottom: 20px;
 }
