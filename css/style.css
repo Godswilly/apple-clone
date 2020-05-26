@@ -26,6 +26,8 @@ a {
   height: 550px;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: cover;
+  width: 100%;
 }
 
 .nav-bar {
@@ -127,6 +129,7 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: minmax(150px, 200px);
+  width: 100%;
 }
 
 footer {
